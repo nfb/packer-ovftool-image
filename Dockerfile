@@ -17,6 +17,6 @@ RUN rm VMware-ovftool-4.4.3-18663434-lin.x86_64.zip packer_1.11.2_linux_amd64.zi
 ENV PATH="$PATH:/ovftool"
 ENV PATH="$PATH:/"
 #ENV PATH="$PATH:/packer/"
-RUN packer plugins install github.com/hashicorp/vmware
+RUN packer plugins install github.com/hashicorp/vsphere
 RUN packer plugins install github.com/hashicorp/ansible
 ENTRYPOINT ["packer"]

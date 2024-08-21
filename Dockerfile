@@ -16,4 +16,4 @@ COPY --from=0 packer /packer/
 COPY --from=0 /ovftool /ovftool
 ENV PATH="$PATH:/ovftool"
 ENV PATH="$PATH:/packer/"
-
+ENTRYPOINT packer

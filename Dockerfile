@@ -20,4 +20,5 @@ ENV PATH="$PATH:/"
 RUN packer plugins install github.com/hashicorp/vsphere
 RUN packer plugins install github.com/hashicorp/vmware
 RUN packer plugins install github.com/hashicorp/ansible
+RUN packer plugins install github.com/hashicorp/amazon
 ENTRYPOINT ["packer"]
